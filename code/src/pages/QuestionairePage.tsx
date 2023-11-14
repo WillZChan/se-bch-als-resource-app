@@ -12,11 +12,18 @@ interface Props {}
 const QuestionaireBodyContent: React.FC<Props> = () => {
   const { classes } = bodyContentUseStyles();
 
+  const initialChoices = [
+    { id: 'comm', title: 'Communication', link: '/communication' },
+    { id: 'comp_access', title: 'Computer Access', link: '/computer-access' },
+    { id: 'home_access', title: 'Home Access', link: '/home-access' },
+    { id: 'smart_phone', title: 'Smart Phone Access', link: '/smart-phone-access' },
+  ];
+
   // current question state
   const [currQuestion, setCurrQuestion] = useState<IQuestion>({ id: '2', title: 'Which area do you want to look into?' });
 
   // current choices state
-  const [currChoices, setCurrChoices] = useState<IChoice[]>([]);
+  const [currChoices, setCurrChoices] = useState<IChoice[]>(initialChoices);
 
   // currently clicked choice state
   const [clickedChoice, setClickedChoice] = useState<IChoice>({ id: '1', title: 'Home' });
@@ -45,21 +52,29 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
 
   // updates choices and questions for clicked choice
   const updateChoicesAndQuestions = useCallback(async (choice: IChoice) => {
+    console.log('Clicked choice:', choice);
     try {
       // search for the next set of choices and question using the clicked choice
       const [question, choicesList, hasSol, sol] = await memoizedSearchQuestionsChoicesFromJson(choice);
-    
+      console.log('New question:', question);
+      console.log('New choices list:', choicesList);
+      console.log('Has solution:', hasSol);
+      console.log('Solution:', sol);
+
       // set whether or not the next step has a solution
       // setHasSolution(hasSol);
     
       // if the next step has a solution, set the solution
       // otherwise, set the clicked choice
       if (hasSol) {
+        console.log('Solution found, updating state...');
         setSolution(sol);
         setHasSolution(true);
       } 
       else {
+        console.log('No solution, updating choices...');
         setSolution({ id: '', title: '' });
+        
         setClickedChoice(choice);
         setHasSolution(false);
       }
@@ -73,6 +88,8 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
           choiceList: currChoices,
         });
         // set the new choices and question
+        console.log('Current question set to:', question);
+        console.log('Current choices set to:', choicesList);
         setCurrChoices(choicesList);
         setCurrQuestion(question);
       }
@@ -128,26 +145,26 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
 
   return (
     <div>
-    <Title hasPrev={(prevSelectedContent.current.length > 1)} prevQuestion={prevQuestion} titleImg={image.current} title={pageTitle.current} />
-    {!hasSolution ? 
-    <Stack
-      spacing="xl"
-      className={classes.outer}
-      sx={(theme) => ({
-        backgroundColor:
-          theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
-      })}
-    >
-      <Text className={classes.text}> {currQuestion.title} </Text>
-      {currChoices.map((choice) => (  
-        <div key={choice.id}>
-        <ToggleButton updateContent={updateChoicesAndQuestions} className={classes.inner} choice={choice} />
-        </div>
-      ))} 
-    </Stack>
-    : 
-    <SolutionPages solution={solution} hasSolution={hasSolution}/>
-    }
+      <Title hasPrev={(prevSelectedContent.current.length > 1)} prevQuestion={prevQuestion} titleImg={image.current} title={pageTitle.current} />
+      {!hasSolution ? (
+        <Stack
+          spacing="xl"
+          className={classes.outer}
+          sx={(theme) => ({
+            backgroundColor:
+              theme.colorScheme === 'dark' ? theme.colors.dark[8] : theme.colors.gray[0],
+          })}
+        >
+          <Text className={classes.text}> {currQuestion.title} </Text>
+          {currChoices.map((choice) => (
+            <div key={choice.id}>
+              <ToggleButton updateContent={() => updateChoicesAndQuestions(choice)} className={classes.inner} choice={choice} />
+            </div>
+          ))}
+        </Stack>
+      ) : (
+        <SolutionPages solution={solution} hasSolution={hasSolution}/>
+      )}
     </div>
   );
 };
