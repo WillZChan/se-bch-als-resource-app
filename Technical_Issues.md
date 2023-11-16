@@ -20,7 +20,7 @@ Developing a web application featuring a choice-based questionnaire. The fronten
   - 403 and 404 errors on GET requests to various API endpoints (`/api/first-entries/1?populate=*`, `/api/choice-to-question-maps/comm?populate=*`).
 - **Resolution:** The 403 Forbidden error was due to inadequate permissions set in Strapi for certain roles. Adjusting these permissions in the Strapi admin panel resolved the issue. The 404 errors were fixed by correcting the API endpoints as detailed above.
 
-### 4. Adding Description to Questions
+### 4. Adding TitleDescription Box to Questions
 - **Requirement:** Implementing a feature to add a short paragraph of description to questions displayed on the website.
 - **Resolution:**
   - Added an additional text field `QuestionDescription` in Strapi content manager under the `question-to-choice-map` collection type.
