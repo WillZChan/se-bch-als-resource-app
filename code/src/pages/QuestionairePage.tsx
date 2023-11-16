@@ -13,10 +13,10 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   const { classes } = bodyContentUseStyles();
 
   const initialChoices = [
-    { id: 'comm', title: 'Communication', link: '/communication' },
-    { id: 'comp_access', title: 'Computer Access', link: '/computer-access' },
-    { id: 'home_access', title: 'Home Access', link: '/home-access' },
-    { id: 'smart_phone', title: 'Smart Phone Access', link: '/smart-phone-access' },
+    { id: '2', title: 'Communication', link: '/communication' },
+    { id: '3', title: 'Computer Access', link: '/computer-access' },
+    { id: '4', title: 'Home Access', link: '/home-access' },
+    { id: '5', title: 'Smart Phone Access', link: '/smart-phone-access' },
   ];
 
   // current question state
@@ -156,6 +156,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
           })}
         >
           <Text className={classes.text}> {currQuestion.title} </Text>
+          <Text className={classes.descriptionText}> {currQuestion.description} </Text>
           {currChoices.map((choice) => (
             <div key={choice.id}>
               <ToggleButton updateContent={() => updateChoicesAndQuestions(choice)} className={classes.inner} choice={choice} />

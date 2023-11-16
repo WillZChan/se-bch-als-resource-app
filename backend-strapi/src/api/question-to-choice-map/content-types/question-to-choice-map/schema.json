@@ -38,6 +38,9 @@
       "relation": "manyToOne",
       "target": "api::first-entry.first-entry",
       "inversedBy": "question_to_choice_maps"
+    },
+    "QuestionDescription": {
+      "type": "text"
     }
   }
 }

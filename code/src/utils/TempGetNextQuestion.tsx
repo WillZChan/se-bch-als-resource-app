@@ -27,7 +27,6 @@ const fetchAnyData = async (APIURL:string): Promise<any> => {
  * @returns An array containing the next question, choices, whether there's a solution, and the solution (if there is one).
  */
 export default async function tempNextChoiceSelectionFromJson(clickedChoice : IChoice): Promise<[IQuestion, IChoice[], boolean, ISolution]> {
-  const choice_selected_id = clickedChoice.id
   let choices_list : IChoice[] = []
   let question : IQuestion = {id:"", title:""}
   let hasSolution = false
@@ -43,7 +42,7 @@ export default async function tempNextChoiceSelectionFromJson(clickedChoice : IC
         title: question_json.data.attributes.question_to_choice_maps.data[0].attributes.QuestionName
       }
     } else {
-      const question_json = await fetchAnyData(API_URL+"/api/choice-to-question-maps/"+choice_selected_id+"?populate=*")
+      const question_json = await fetchAnyData(`${API_URL}/api/choice-to-question-maps/${clickedChoice.id}?populate=*`);
 
       // If there's no next question, check if there's a solution and return it
       if (question_json.data.attributes.choice_to_question.data == null){
@@ -60,7 +59,8 @@ export default async function tempNextChoiceSelectionFromJson(clickedChoice : IC
       // Get the next question from the data returned by the API
       question = {
         id: question_json.data.attributes.choice_to_question.data.id,
-        title: question_json.data.attributes.choice_to_question.data.attributes.QuestionName
+        title: question_json.data.attributes.choice_to_question.data.attributes.QuestionName,
+        description: question_json.data.attributes.choice_to_question.data.attributes.QuestionDescription 
       }
     }
 

@@ -60,6 +60,22 @@ export const bodyContentUseStyles = createStyles((theme) => ({
     },
   },
 
+  descriptionText: {
+    fontSize: rem(16), // smaller font size than 'text'
+    fontWeight: 'normal', // less bold than 'text'
+    color: '#254885', // same color as 'text'
+    paddingTop: rem(1), // add some space above the description
+    fontStyle: 'normal',
+    letterSpacing: rem(-0.5),
+    textAlign: 'left',
+    fontFamily: `Montserrat, ${theme.fontFamily}`,
+    [theme.fn.smallerThan('xs')]: {
+      fontSize: rem(16),
+      textAlign: 'left'
+    },
+  },
+
+
   outer: {
     paddingTop: rem(26),
     pddingBottom: '10%',
