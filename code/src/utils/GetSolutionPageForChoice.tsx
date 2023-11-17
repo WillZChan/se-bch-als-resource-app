@@ -116,35 +116,35 @@ function getPageContent(api_url: string, solution_json : any) : PageContentType[
   }
   
   /**
-  
-  Fetches the content for the specified solution ID.
-  @param solutionId - The ID of the solution to fetch content for.
-  @returns A Promise that resolves to an array containing the title, resource links, handouts or testimonials links, and page content for the specified solution.
-  If an error occurs, the function returns an array of empty values.
-  */
-  export default async function getSolutionContent(solutionId : string): Promise<[string, ResourceLink[], HandoutOrTestimonialLink[], PageContentType[]]> {
-    let resourceList : ResourceLink[] = [];
-    let handoutsOrTestimonialsList : HandoutOrTestimonialLink[] = [];
-    let pageContentList : PageContentType[] = []
-    try {
-      // Fetch the solution data for the specified ID
-      const solution_json = await fetchAnyData(API_URL+"/api/solutions/"+solutionId+"?populate=deep,3")
-      // Get the solution title from the solution data
-      const title = solution_json.data.attributes.Title
-      // Get the handouts or testimonials links from the solution data
-      handoutsOrTestimonialsList = getTestimonialOrHandoutContent(API_URL, solution_json)
+   * Fetches the content for the specified solution ID.
+   * 
+   * @param solutionId - The ID of the solution to fetch content for.
+   * @returns A Promise that resolves to an array containing the solution title, description,
+   * resource links, handouts or testimonials links, and page content for the specified solution.
+   * If an error occurs, the function returns an array of empty values.
+   */
+export default async function getSolutionContent(solutionId: string): Promise<[string, string, ResourceLink[], HandoutOrTestimonialLink[], PageContentType[]]> {
+  let resourceList: ResourceLink[] = [];
+  let handoutsOrTestimonialsList: HandoutOrTestimonialLink[] = [];
+  let pageContentList: PageContentType[] = [];
 
-      // Get the resource links from the solution data
-      resourceList = getResourceContent(solution_json)
+  try {
+    // Fetch the solution data for the specified ID
+    const solution_json = await fetchAnyData(API_URL + "/api/solutions/" + solutionId + "?populate=deep,3");
+    
+    // Get the solution title and description from the solution data
+    const title = solution_json.data.attributes.Title;
+    const description = solution_json.data.attributes.SolutionDescription || ""; // Fetch SolutionDescription
 
-      // Get the page content from the solution data
-      pageContentList = getPageContent(API_URL, solution_json)
+    // Parse resource links, handouts/testimonials, and page content
+    handoutsOrTestimonialsList = getTestimonialOrHandoutContent(API_URL, solution_json);
+    resourceList = getResourceContent(solution_json);
+    pageContentList = getPageContent(API_URL, solution_json);
 
-      // Return an array containing the solution title, resource links, handouts or testimonials links, and page content
-      return [title, resourceList, handoutsOrTestimonialsList, pageContentList]
-    } catch (error) {
-      console.error(error);
-      // Handle the error as needed, e.g. show a notification to the user
-      return ['', [], [], []];
-    }
+    // Return an array containing the solution title, description, resource links, handouts or testimonials links, and page content
+    return [title, description, resourceList, handoutsOrTestimonialsList, pageContentList];
+  } catch (error) {
+    console.error(error);
+    return ['', '', [], [], []]; // Return empty values in case of an error
   }
+}

@@ -40,6 +40,9 @@
         "testimonial-handout-link.link-content",
         "testimonial-handout-pdf.pdf-content"
       ]
+    },
+    "SolutionDescription": {
+      "type": "text"
     }
   }
 }

@@ -22,6 +22,8 @@ interface SolutionContentProps {
 const SolutionPages: React.FC<SolutionContentProps> = ({ solution, hasSolution }): JSX.Element => {
   const { classes } = bodyContentUseStyles();
 
+  const [solutionDescription, setSolutionDescription] = useState<string>('');
+
   // State variables to hold page content data
   let [resourceList, setResourceList] = useState<ResourceLink[]>([])
   let [handoutTestimonialList, setHandoutTestimonialList] = useState<HandoutOrTestimonialLink[]>([])
@@ -33,14 +35,25 @@ const SolutionPages: React.FC<SolutionContentProps> = ({ solution, hasSolution }
    */
   const getSolutionPageContent = async (): Promise<void> => {
     try {
-      let [_, resource_list, handouts_testimonials_list, page_content] = await getSolutionContent(solution.id)
-      setResourceList(resource_list)
-      setHandoutTestimonialList(handouts_testimonials_list)
-      setPageContent(page_content)
+      let [title, description, resourceList, handoutsTestimonialsList, pageContent] = await getSolutionContent(solution.id);
+      setResourceList(resourceList);
+      setHandoutTestimonialList(handoutsTestimonialsList);
+      setPageContent(pageContent);
+  
+      // Check if description is provided
+      if (description) {
+        setSolutionDescription(description);
+      } else {
+        // Handle the absence of description, maybe set a default value or leave it empty
+        setSolutionDescription('No description available.');
+      }
+  
     } catch (e) {
-      setError("Error fetching solution page content")
+      setError("Error fetching solution page content");
     }
-  }
+  };
+  
+  
 
   // Fetches solution page content if it has a solution and an id
   useEffect(() => {
@@ -66,6 +79,11 @@ const SolutionPages: React.FC<SolutionContentProps> = ({ solution, hasSolution }
         {/* Title */}
         <Text className={classes.text}> {solution.title} </Text>
 
+        {/* Solution Description */}
+        {solutionDescription && (
+          <Text className={classes.descriptionText}>{solutionDescription}</Text>
+        )}
+        
         {/* Page content */}
         {!pageContent.length ? (
           <></>
