@@ -4,8 +4,8 @@ const axios = require('axios');
 const fs = require('fs');
 const path = require('path');
 
-const STRAPI_URL = 'http://127.0.0.1:1338';             //needs to change to avoid showing direct IP add
-const DIRECTORY_PATH = './Strapi_Content_and_structure_example'; // directory with JSON files
+const STRAPI_URL = 'http://127.0.0.1:1338';
+const DIRECTORY_PATH = './Strapi_Content_and_structure_example';
 
 // Read JSON data from a file
 function readJsonFile(filePath) {
@@ -13,29 +13,17 @@ function readJsonFile(filePath) {
   return JSON.parse(rawData);
 }
 
-// Login to Strapi and get token
-async function getStrapiToken() {
-  try {
-    const response = await axios.post(`${STRAPI_URL}/auth/local`, {
-      identifier: process.env.STRAPI_IDENTIFIER,
-      password: process.env.STRAPI_PASSWORD,
-    });
-    return response.data.jwt;
-  } catch (error) {
-    console.error('Error fetching Strapi token:', error);
-    return null;
-  }
-}
-
 // Import data into Strapi
-async function importData(data, endpoint, token) {
+async function importData(data, endpoint) {
   try {
+    // Check if data is an array, if not, make it an array
+    if (!Array.isArray(data)) {
+      data = [data];
+    }
+
     for (const item of data) {
-      await axios.post(`${STRAPI_URL}${endpoint}`, { data: item }, {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      });
+      const payload = { data: item }; // Wrapping the item in a data object
+      await axios.post(`${STRAPI_URL}${endpoint}`, payload); // Removed the token header
       console.log(`Imported to ${endpoint}: ${JSON.stringify(item)}`);
     }
     console.log(`Data import to ${endpoint} completed.`);
@@ -44,14 +32,10 @@ async function importData(data, endpoint, token) {
   }
 }
 
+
+
 // Execute the script
 async function runImport() {
-  const token = await getStrapiToken();
-  if (!token) {
-    console.error('Failed to retrieve Strapi token. Aborting import.');
-    return;
-  }
-
   const fileToEndpointMap = {
     'choice-to-question-map.json': '/api/choice-to-question-maps',
     'question-to-choice-map.json': '/api/question-to-choice-maps',
@@ -62,7 +46,7 @@ async function runImport() {
     const filePath = path.join(DIRECTORY_PATH, filename);
     if (fs.existsSync(filePath)) {
       const data = readJsonFile(filePath);
-      await importData(data.data, endpoint, token);
+      await importData(data, endpoint);  // Removed the token parameter
     }
   }
 }

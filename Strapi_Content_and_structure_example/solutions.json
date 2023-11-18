@@ -1,271 +1,102 @@
 {
-   "data":[
-      {
-         "id":4,
-         "attributes":{
-            "Title":"voice preservation",
-            "createdAt":"2023-04-20T18:33:13.822Z",
-            "updatedAt":"2023-04-20T18:33:15.712Z",
-            "publishedAt":"2023-04-20T18:33:15.706Z",
-            "PreviousChoiceConnected":{
-               "data":{
-                  "id":15,
-                  "attributes":{
-                     "ChoiceName":"Voice preservation",
-                     "createdAt":"2023-04-20T05:22:18.303Z",
-                     "updatedAt":"2023-04-20T05:22:22.061Z",
-                     "publishedAt":"2023-04-20T05:22:22.055Z",
-                     "ChoiceToSolutionMap":{
-                        "data":{
-                           "id":4,
-                           "attributes":{
-                              "Title":"voice preservation",
-                              "createdAt":"2023-04-20T18:33:13.822Z",
-                              "updatedAt":"2023-04-20T18:33:15.712Z",
-                              "publishedAt":"2023-04-20T18:33:15.706Z"
-                           }
-                        }
-                     },
-                     "previous_questions_connected":{
-                        "data":[
-                           {
-                              "id":3,
-                              "attributes":{
-                                 "QuestionName":"Somewhat concerned about",
-                                 "createdAt":"2023-04-20T05:18:12.599Z",
-                                 "updatedAt":"2023-04-20T05:18:22.287Z",
-                                 "publishedAt":"2023-04-20T05:18:22.280Z"
-                              }
-                           }
-                        ]
-                     },
-                     "choice_to_question":{
-                        "data":null
-                     }
-                  }
-               }
-            },
-            "Resources":[
-               {
-                  "id":3,
-                  "ResourceTitle":"dummy link",
-                  "ResourceLink":"https://www.youtube.com"
-               }
-            ],
-            "Block":[
-               
-            ],
-            "TestimonialsOrHandouts":[
-               
-            ]
-         }
-      },
-      {
-         "id":5,
-         "attributes":{
-            "Title":"Dummy Title",
-            "createdAt":"2023-04-21T15:09:52.537Z",
-            "updatedAt":"2023-04-21T15:09:54.474Z",
-            "publishedAt":"2023-04-21T15:09:54.466Z",
-            "PreviousChoiceConnected":{
-               "data":{
-                  "id":11,
-                  "attributes":{
-                     "ChoiceName":"The energy it takes to speak",
-                     "createdAt":"2023-04-20T05:20:40.320Z",
-                     "updatedAt":"2023-04-20T05:21:55.082Z",
-                     "publishedAt":"2023-04-20T05:21:55.076Z",
-                     "ChoiceToSolutionMap":{
-                        "data":{
-                           "id":5,
-                           "attributes":{
-                              "Title":"Dummy Title",
-                              "createdAt":"2023-04-21T15:09:52.537Z",
-                              "updatedAt":"2023-04-21T15:09:54.474Z",
-                              "publishedAt":"2023-04-21T15:09:54.466Z"
-                           }
-                        }
-                     },
-                     "previous_questions_connected":{
-                        "data":[
-                           {
-                              "id":3,
-                              "attributes":{
-                                 "QuestionName":"Somewhat concerned about",
-                                 "createdAt":"2023-04-20T05:18:12.599Z",
-                                 "updatedAt":"2023-04-20T05:18:22.287Z",
-                                 "publishedAt":"2023-04-20T05:18:22.280Z"
-                              }
-                           }
-                        ]
-                     },
-                     "choice_to_question":{
-                        "data":null
-                     }
-                  }
-               }
-            },
-            "Resources":[
-               {
-                  "id":4,
-                  "ResourceTitle":"Dummy link ",
-                  "ResourceLink":"https://www.google.com/search?q=google+translate&rlz=1C1VDKB_enUS935US935&oq=go&aqs=chrome.0.69i59j69i57j35i39j46i131i199i433i465i512j69i60l3j69i65.1483j0j7&sourceid=chrome&ie=UTF-8"
-               }
-            ],
-            "Block":[
-               
-            ],
-            "TestimonialsOrHandouts":[
-               
-            ]
-         }
-      },
-      {
-         "id":1,
-         "attributes":{
-            "Title":"Voice Amplification",
-            "createdAt":"2023-04-20T05:43:36.731Z",
-            "updatedAt":"2023-04-21T15:10:37.537Z",
-            "publishedAt":"2023-04-20T05:54:07.946Z",
-            "PreviousChoiceConnected":{
-               "data":{
-                  "id":20,
-                  "attributes":{
-                     "ChoiceName":"Voice amplification",
-                     "createdAt":"2023-04-20T05:26:37.906Z",
-                     "updatedAt":"2023-04-20T05:26:39.092Z",
-                     "publishedAt":"2023-04-20T05:26:39.087Z",
-                     "ChoiceToSolutionMap":{
-                        "data":{
-                           "id":1,
-                           "attributes":{
-                              "Title":"Voice Amplification",
-                              "createdAt":"2023-04-20T05:43:36.731Z",
-                              "updatedAt":"2023-04-21T15:10:37.537Z",
-                              "publishedAt":"2023-04-20T05:54:07.946Z"
-                           }
-                        }
-                     },
-                     "previous_questions_connected":{
-                        "data":[
-                           {
-                              "id":5,
-                              "attributes":{
-                                 "QuestionName":"My speech clarity",
-                                 "createdAt":"2023-04-20T05:25:39.626Z",
-                                 "updatedAt":"2023-04-20T05:25:47.561Z",
-                                 "publishedAt":"2023-04-20T05:25:47.556Z"
-                              }
-                           },
-                           {
-                              "id":6,
-                              "attributes":{
-                                 "QuestionName":"Voice amplification can help you speak with less energy and avoid quick fatigue. Click the button below to learn more about it.",
-                                 "createdAt":"2023-04-20T05:30:33.805Z",
-                                 "updatedAt":"2023-04-20T05:30:35.174Z",
-                                 "publishedAt":"2023-04-20T05:30:35.169Z"
-                              }
-                           }
-                        ]
-                     },
-                     "choice_to_question":{
-                        "data":null
-                     }
-                  }
-               }
-            },
-            "Resources":[
-               
-            ],
-            "Block":[
-               {
-                  "id":1,
-                  "__component":"video.video",
-                  "VideoMedia":{
-                     "data":{
-                        "id":1,
-                        "attributes":{
-                           "name":"What_is_ALS.mp4",
-                           "alternativeText":null,
-                           "caption":null,
-                           "width":null,
-                           "height":null,
-                           "formats":null,
-                           "hash":"What_is_ALS_650739ddef",
-                           "ext":".mp4",
-                           "mime":"video/mp4",
-                           "size":15432.18,
-                           "url":"/uploads/What_is_ALS_650739ddef.mp4",
-                           "previewUrl":null,
-                           "provider":"local",
-                           "provider_metadata":null,
-                           "createdAt":"2023-04-20T05:49:13.176Z",
-                           "updatedAt":"2023-04-20T05:49:13.176Z"
-                        }
-                     }
-                  }
-               },
-               {
-                  "id":3,
-                  "__component":"description-paragraphs.description-paragraphs",
-                  "DescriptionParagraph":"When we speak, we use many muscle groups at the same time. When you try to speak louder (because your voice is weak OR there is noise in the room), you can quickly fatigue the muscles used for speaking. Voice amplification can help you speak with less energy and help avoid quick fatigue."
-               },
-               {
-                  "id":1,
-                  "__component":"description-paragraphs.description-paragraphs",
-                  "DescriptionParagraph":""
-               },
-               {
-                  "id":2,
-                  "__component":"description-paragraphs.description-paragraphs",
-                  "DescriptionParagraph":"When we speak, we use many muscle groups at the same time. When you try to speak louder (because your voice is weak OR there is noise in the room), you can quickly fatigue the muscles used for speaking. Voice amplification can help you speak with less energy and help avoid quick fatigue."
-               }
-            ],
-            "TestimonialsOrHandouts":[
-               {
-                  "id":1,
-                  "__component":"testimonial-handout-link.link-content",
-                  "Title":"HandoutLink",
-                  "Link":"https://www.childrenshospital.org/"
-               },
-               {
-                  "id":1,
-                  "__component":"testimonial-handout-pdf.pdf-content",
-                  "Title":"Handoutpdf",
-                  "PDF":{
-                     "data":{
-                        "id":2,
-                        "attributes":{
-                           "name":"ALS_FactSheet-E_508C.pdf",
-                           "alternativeText":null,
-                           "caption":null,
-                           "width":null,
-                           "height":null,
-                           "formats":null,
-                           "hash":"ALS_Fact_Sheet_E_508_C_c249dcfd4d",
-                           "ext":".pdf",
-                           "mime":"application/pdf",
-                           "size":574.17,
-                           "url":"/uploads/ALS_Fact_Sheet_E_508_C_c249dcfd4d.pdf",
-                           "previewUrl":null,
-                           "provider":"local",
-                           "provider_metadata":null,
-                           "createdAt":"2023-04-20T05:54:00.045Z",
-                           "updatedAt":"2023-04-20T05:54:00.045Z"
-                        }
-                     }
-                  }
-               }
-            ]
-         }
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "Title": "Messsage Banking Solution",
+        "createdAt": "2023-11-16T00:55:19.247Z",
+        "updatedAt": "2023-11-16T02:16:20.523Z",
+        "publishedAt": "2023-11-16T01:54:46.329Z",
+        "SolutionDescription": null
       }
-   ],
-   "meta":{
-      "pagination":{
-         "page":1,
-         "pageSize":25,
-         "pageCount":1,
-         "total":3
+    },
+    {
+      "id": 2,
+      "attributes": {
+        "Title": "Voice Amplification Solution",
+        "createdAt": "2023-11-16T03:55:30.320Z",
+        "updatedAt": "2023-11-16T03:56:35.136Z",
+        "publishedAt": "2023-11-16T03:55:32.617Z",
+        "SolutionDescription": null
       }
-   }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "Title": "Voice Banking Solution",
+        "createdAt": "2023-11-17T14:01:40.479Z",
+        "updatedAt": "2023-11-17T14:02:15.977Z",
+        "publishedAt": "2023-11-17T14:01:41.714Z",
+        "SolutionDescription": "Voice banking solution"
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "Title": "Letter Cueing Solution",
+        "createdAt": "2023-11-17T14:24:20.638Z",
+        "updatedAt": "2023-11-17T14:25:28.241Z",
+        "publishedAt": "2023-11-17T14:24:21.533Z",
+        "SolutionDescription": "Letter Cueing Solution Description"
+      }
+    },
+    {
+      "id": 6,
+      "attributes": {
+        "Title": "Topic Cueing Solution",
+        "createdAt": "2023-11-17T14:24:49.242Z",
+        "updatedAt": "2023-11-17T14:24:50.126Z",
+        "publishedAt": "2023-11-17T14:24:50.123Z",
+        "SolutionDescription": "Topic Cueing Solution Description"
+      }
+    },
+    {
+      "id": 7,
+      "attributes": {
+        "Title": "Customized Tabbed Communication Booklet Solution",
+        "createdAt": "2023-11-17T14:26:09.044Z",
+        "updatedAt": "2023-11-17T14:26:10.192Z",
+        "publishedAt": "2023-11-17T14:26:10.164Z",
+        "SolutionDescription": "Customized Tabbed Communication Booklet Solution description"
+      }
+    },
+    {
+      "id": 8,
+      "attributes": {
+        "Title": "I have a hard time holding a pen",
+        "createdAt": "2023-11-17T14:28:25.021Z",
+        "updatedAt": "2023-11-17T16:27:22.309Z",
+        "publishedAt": "2023-11-17T14:28:25.847Z",
+        "SolutionDescription": "I have a hard time holding a pen  solution Description"
+      }
+    },
+    {
+      "id": 9,
+      "attributes": {
+        "Title": "I have no difficulty holding a pen",
+        "createdAt": "2023-11-17T14:29:09.745Z",
+        "updatedAt": "2023-11-17T14:29:10.717Z",
+        "publishedAt": "2023-11-17T14:29:10.713Z",
+        "SolutionDescription": "I have no difficulty holding a pen description"
+      }
+    },
+    {
+      "id": 10,
+      "attributes": {
+        "Title": "Partner Assisted Scanning",
+        "createdAt": "2023-11-17T14:30:00.669Z",
+        "updatedAt": "2023-11-17T14:30:23.502Z",
+        "publishedAt": "2023-11-17T14:30:23.499Z",
+        "SolutionDescription": "Partner Assisted Scanning Description"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 9
+    }
+  }
 }

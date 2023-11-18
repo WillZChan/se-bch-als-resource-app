@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "username": "lionelc",
+    "email": "lionelc@bu.edu",
+    "provider": "local",
+    "confirmed": true,
+    "blocked": false,
+    "createdAt": "2023-11-14T20:35:28.570Z",
+    "updatedAt": "2023-11-14T20:39:28.059Z"
+  }
+]

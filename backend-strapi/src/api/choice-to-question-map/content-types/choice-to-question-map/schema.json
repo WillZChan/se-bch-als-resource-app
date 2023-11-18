@@ -38,6 +38,14 @@
       "relation": "oneToOne",
       "target": "api::question-to-choice-map.question-to-choice-map",
       "mappedBy": "previous_choices_connected"
+    },
+    "PlatformChoice": {
+      "type": "enumeration",
+      "enum": [
+        "iOS",
+        "Android",
+        "WindowsPhone"
+      ]
     }
   }
 }

@@ -1,507 +1,142 @@
 {
-   "data":[
-      {
-         "id":2,
-         "attributes":{
-            "QuestionName":"Concerned about quality of speech?",
-            "createdAt":"2023-04-20T04:59:34.934Z",
-            "updatedAt":"2023-04-20T05:00:12.161Z",
-            "publishedAt":"2023-04-20T05:00:12.154Z",
-            "question_to_choices":{
-               "data":[
-                  {
-                     "id":5,
-                     "attributes":{
-                        "ChoiceName":"No, but I want to proactive",
-                        "createdAt":"2023-04-20T05:15:11.251Z",
-                        "updatedAt":"2023-04-20T05:15:32.523Z",
-                        "publishedAt":"2023-04-20T05:15:32.516Z"
-                     }
-                  },
-                  {
-                     "id":6,
-                     "attributes":{
-                        "ChoiceName":"Somewhat concerned",
-                        "createdAt":"2023-04-20T05:16:16.463Z",
-                        "updatedAt":"2023-04-20T05:16:50.658Z",
-                        "publishedAt":"2023-04-20T05:16:50.651Z"
-                     }
-                  },
-                  {
-                     "id":7,
-                     "attributes":{
-                        "ChoiceName":"Very concerned",
-                        "createdAt":"2023-04-20T05:16:45.341Z",
-                        "updatedAt":"2023-04-20T05:16:46.550Z",
-                        "publishedAt":"2023-04-20T05:16:46.544Z"
-                     }
-                  },
-                  {
-                     "id":8,
-                     "attributes":{
-                        "ChoiceName":"No longer meets my communication needs",
-                        "createdAt":"2023-04-20T05:17:15.583Z",
-                        "updatedAt":"2023-04-20T05:17:16.790Z",
-                        "publishedAt":"2023-04-20T05:17:16.785Z"
-                     }
-                  }
-               ]
-            },
-            "previous_choices_connected":{
-               "data":{
-                  "id":1,
-                  "attributes":{
-                     "ChoiceName":"Communication",
-                     "createdAt":"2023-04-20T04:44:29.739Z",
-                     "updatedAt":"2023-04-20T04:44:51.466Z",
-                     "publishedAt":"2023-04-20T04:44:51.459Z"
-                  }
-               }
-            },
-            "first_entry":{
-               "data":null
-            }
-         }
-      },
-      {
-         "id":3,
-         "attributes":{
-            "QuestionName":"Somewhat concerned about",
-            "createdAt":"2023-04-20T05:18:12.599Z",
-            "updatedAt":"2023-04-20T05:18:22.287Z",
-            "publishedAt":"2023-04-20T05:18:22.280Z",
-            "question_to_choices":{
-               "data":[
-                  {
-                     "id":9,
-                     "attributes":{
-                        "ChoiceName":"My speech clarity",
-                        "createdAt":"2023-04-20T05:19:04.659Z",
-                        "updatedAt":"2023-04-20T05:19:05.852Z",
-                        "publishedAt":"2023-04-20T05:19:05.844Z"
-                     }
-                  },
-                  {
-                     "id":10,
-                     "attributes":{
-                        "ChoiceName":"My volume",
-                        "createdAt":"2023-04-20T05:20:10.665Z",
-                        "updatedAt":"2023-04-20T05:20:12.130Z",
-                        "publishedAt":"2023-04-20T05:20:12.077Z"
-                     }
-                  },
-                  {
-                     "id":11,
-                     "attributes":{
-                        "ChoiceName":"The energy it takes to speak",
-                        "createdAt":"2023-04-20T05:20:40.320Z",
-                        "updatedAt":"2023-04-20T05:21:55.082Z",
-                        "publishedAt":"2023-04-20T05:21:55.076Z"
-                     }
-                  },
-                  {
-                     "id":12,
-                     "attributes":{
-                        "ChoiceName":"My breath support for speaking",
-                        "createdAt":"2023-04-20T05:21:04.204Z",
-                        "updatedAt":"2023-04-20T05:21:05.730Z",
-                        "publishedAt":"2023-04-20T05:21:05.724Z"
-                     }
-                  },
-                  {
-                     "id":15,
-                     "attributes":{
-                        "ChoiceName":"Voice preservation",
-                        "createdAt":"2023-04-20T05:22:18.303Z",
-                        "updatedAt":"2023-04-20T05:22:22.061Z",
-                        "publishedAt":"2023-04-20T05:22:22.055Z"
-                     }
-                  }
-               ]
-            },
-            "previous_choices_connected":{
-               "data":{
-                  "id":6,
-                  "attributes":{
-                     "ChoiceName":"Somewhat concerned",
-                     "createdAt":"2023-04-20T05:16:16.463Z",
-                     "updatedAt":"2023-04-20T05:16:50.658Z",
-                     "publishedAt":"2023-04-20T05:16:50.651Z"
-                  }
-               }
-            },
-            "first_entry":{
-               "data":null
-            }
-         }
-      },
-      {
-         "id":4,
-         "attributes":{
-            "QuestionName":"No longer meets my communication needs",
-            "createdAt":"2023-04-20T05:23:01.179Z",
-            "updatedAt":"2023-04-20T05:23:02.472Z",
-            "publishedAt":"2023-04-20T05:23:02.457Z",
-            "question_to_choices":{
-               "data":[
-                  {
-                     "id":17,
-                     "attributes":{
-                        "ChoiceName":"Voice banking",
-                        "createdAt":"2023-04-20T05:24:15.334Z",
-                        "updatedAt":"2023-04-20T05:24:16.472Z",
-                        "publishedAt":"2023-04-20T05:24:16.467Z"
-                     }
-                  },
-                  {
-                     "id":18,
-                     "attributes":{
-                        "ChoiceName":"Double dipping",
-                        "createdAt":"2023-04-20T05:24:53.666Z",
-                        "updatedAt":"2023-04-20T05:24:56.116Z",
-                        "publishedAt":"2023-04-20T05:24:56.110Z"
-                     }
-                  },
-                  {
-                     "id":14,
-                     "attributes":{
-                        "ChoiceName":"Message banking",
-                        "createdAt":"2023-04-20T05:21:42.435Z",
-                        "updatedAt":"2023-04-20T05:31:59.666Z",
-                        "publishedAt":"2023-04-20T05:31:59.660Z"
-                     }
-                  }
-               ]
-            },
-            "previous_choices_connected":{
-               "data":{
-                  "id":8,
-                  "attributes":{
-                     "ChoiceName":"No longer meets my communication needs",
-                     "createdAt":"2023-04-20T05:17:15.583Z",
-                     "updatedAt":"2023-04-20T05:17:16.790Z",
-                     "publishedAt":"2023-04-20T05:17:16.785Z"
-                  }
-               }
-            },
-            "first_entry":{
-               "data":null
-            }
-         }
-      },
-      {
-         "id":5,
-         "attributes":{
-            "QuestionName":"My speech clarity",
-            "createdAt":"2023-04-20T05:25:39.626Z",
-            "updatedAt":"2023-04-20T05:25:47.561Z",
-            "publishedAt":"2023-04-20T05:25:47.556Z",
-            "question_to_choices":{
-               "data":[
-                  {
-                     "id":19,
-                     "attributes":{
-                        "ChoiceName":"Pacing your speech including segmenting syllables",
-                        "createdAt":"2023-04-20T05:26:14.223Z",
-                        "updatedAt":"2023-04-20T05:26:15.370Z",
-                        "publishedAt":"2023-04-20T05:26:15.365Z"
-                     }
-                  },
-                  {
-                     "id":20,
-                     "attributes":{
-                        "ChoiceName":"Voice amplification",
-                        "createdAt":"2023-04-20T05:26:37.906Z",
-                        "updatedAt":"2023-04-20T05:26:39.092Z",
-                        "publishedAt":"2023-04-20T05:26:39.087Z"
-                     }
-                  },
-                  {
-                     "id":21,
-                     "attributes":{
-                        "ChoiceName":"Producing fewer words per breath",
-                        "createdAt":"2023-04-20T05:27:19.550Z",
-                        "updatedAt":"2023-04-20T05:27:20.664Z",
-                        "publishedAt":"2023-04-20T05:27:20.657Z"
-                     }
-                  },
-                  {
-                     "id":22,
-                     "attributes":{
-                        "ChoiceName":"Over-articulating some sounds",
-                        "createdAt":"2023-04-20T05:28:44.066Z",
-                        "updatedAt":"2023-04-20T05:28:45.313Z",
-                        "publishedAt":"2023-04-20T05:28:45.306Z"
-                     }
-                  },
-                  {
-                     "id":23,
-                     "attributes":{
-                        "ChoiceName":"Learn about quick access tools for clarifying your message",
-                        "createdAt":"2023-04-20T05:29:08.024Z",
-                        "updatedAt":"2023-04-20T05:29:09.164Z",
-                        "publishedAt":"2023-04-20T05:29:09.158Z"
-                     }
-                  }
-               ]
-            },
-            "previous_choices_connected":{
-               "data":{
-                  "id":9,
-                  "attributes":{
-                     "ChoiceName":"My speech clarity",
-                     "createdAt":"2023-04-20T05:19:04.659Z",
-                     "updatedAt":"2023-04-20T05:19:05.852Z",
-                     "publishedAt":"2023-04-20T05:19:05.844Z"
-                  }
-               }
-            },
-            "first_entry":{
-               "data":null
-            }
-         }
-      },
-      {
-         "id":6,
-         "attributes":{
-            "QuestionName":"Voice amplification can help you speak with less energy and avoid quick fatigue. Click the button below to learn more about it.",
-            "createdAt":"2023-04-20T05:30:33.805Z",
-            "updatedAt":"2023-04-20T05:30:35.174Z",
-            "publishedAt":"2023-04-20T05:30:35.169Z",
-            "question_to_choices":{
-               "data":[
-                  {
-                     "id":20,
-                     "attributes":{
-                        "ChoiceName":"Voice amplification",
-                        "createdAt":"2023-04-20T05:26:37.906Z",
-                        "updatedAt":"2023-04-20T05:26:39.092Z",
-                        "publishedAt":"2023-04-20T05:26:39.087Z"
-                     }
-                  }
-               ]
-            },
-            "previous_choices_connected":{
-               "data":{
-                  "id":10,
-                  "attributes":{
-                     "ChoiceName":"My volume",
-                     "createdAt":"2023-04-20T05:20:10.665Z",
-                     "updatedAt":"2023-04-20T05:20:12.130Z",
-                     "publishedAt":"2023-04-20T05:20:12.077Z"
-                  }
-               }
-            },
-            "first_entry":{
-               "data":null
-            }
-         }
-      },
-      {
-         "id":7,
-         "attributes":{
-            "QuestionName":"Voice Banking",
-            "createdAt":"2023-04-20T05:31:15.633Z",
-            "updatedAt":"2023-04-20T05:31:16.887Z",
-            "publishedAt":"2023-04-20T05:31:16.881Z",
-            "question_to_choices":{
-               "data":[
-                  {
-                     "id":24,
-                     "attributes":{
-                        "ChoiceName":"Model talker",
-                        "createdAt":"2023-04-20T05:34:24.335Z",
-                        "updatedAt":"2023-04-20T05:34:25.388Z",
-                        "publishedAt":"2023-04-20T05:34:25.382Z"
-                     }
-                  },
-                  {
-                     "id":25,
-                     "attributes":{
-                        "ChoiceName":"Acapela",
-                        "createdAt":"2023-04-20T05:34:49.318Z",
-                        "updatedAt":"2023-04-20T05:34:50.428Z",
-                        "publishedAt":"2023-04-20T05:34:50.423Z"
-                     }
-                  },
-                  {
-                     "id":26,
-                     "attributes":{
-                        "ChoiceName":"Voice keeper",
-                        "createdAt":"2023-04-20T05:35:06.349Z",
-                        "updatedAt":"2023-04-20T05:35:07.405Z",
-                        "publishedAt":"2023-04-20T05:35:07.400Z"
-                     }
-                  },
-                  {
-                     "id":27,
-                     "attributes":{
-                        "ChoiceName":"Speak Unique",
-                        "createdAt":"2023-04-20T05:35:29.014Z",
-                        "updatedAt":"2023-04-20T05:35:30.206Z",
-                        "publishedAt":"2023-04-20T05:35:30.200Z"
-                     }
-                  },
-                  {
-                     "id":28,
-                     "attributes":{
-                        "ChoiceName":"Cereproc",
-                        "createdAt":"2023-04-20T05:36:02.741Z",
-                        "updatedAt":"2023-04-20T05:36:03.967Z",
-                        "publishedAt":"2023-04-20T05:36:03.961Z"
-                     }
-                  }
-               ]
-            },
-            "previous_choices_connected":{
-               "data":{
-                  "id":17,
-                  "attributes":{
-                     "ChoiceName":"Voice banking",
-                     "createdAt":"2023-04-20T05:24:15.334Z",
-                     "updatedAt":"2023-04-20T05:24:16.472Z",
-                     "publishedAt":"2023-04-20T05:24:16.467Z"
-                  }
-               }
-            },
-            "first_entry":{
-               "data":null
-            }
-         }
-      },
-      {
-         "id":8,
-         "attributes":{
-            "QuestionName":"Learn about backup communication tool",
-            "createdAt":"2023-04-20T05:37:30.172Z",
-            "updatedAt":"2023-04-20T05:37:33.860Z",
-            "publishedAt":"2023-04-20T05:37:33.838Z",
-            "question_to_choices":{
-               "data":[
-                  {
-                     "id":29,
-                     "attributes":{
-                        "ChoiceName":"Quick ACCESS Strategies",
-                        "createdAt":"2023-04-20T05:40:34.597Z",
-                        "updatedAt":"2023-04-20T05:41:26.693Z",
-                        "publishedAt":"2023-04-20T05:41:26.685Z"
-                     }
-                  },
-                  {
-                     "id":30,
-                     "attributes":{
-                        "ChoiceName":"High tech strategies",
-                        "createdAt":"2023-04-20T05:40:54.374Z",
-                        "updatedAt":"2023-04-20T05:40:55.577Z",
-                        "publishedAt":"2023-04-20T05:40:55.560Z"
-                     }
-                  },
-                  {
-                     "id":31,
-                     "attributes":{
-                        "ChoiceName":"Partner training strategy",
-                        "createdAt":"2023-04-20T05:41:50.882Z",
-                        "updatedAt":"2023-04-20T05:41:51.914Z",
-                        "publishedAt":"2023-04-20T05:41:51.908Z"
-                     }
-                  },
-                  {
-                     "id":32,
-                     "attributes":{
-                        "ChoiceName":"Gaining attention",
-                        "createdAt":"2023-04-20T05:42:10.263Z",
-                        "updatedAt":"2023-04-20T05:42:12.032Z",
-                        "publishedAt":"2023-04-20T05:42:12.026Z"
-                     }
-                  }
-               ]
-            },
-            "previous_choices_connected":{
-               "data":{
-                  "id":23,
-                  "attributes":{
-                     "ChoiceName":"Learn about quick access tools for clarifying your message",
-                     "createdAt":"2023-04-20T05:29:08.024Z",
-                     "updatedAt":"2023-04-20T05:29:09.164Z",
-                     "publishedAt":"2023-04-20T05:29:09.158Z"
-                  }
-               }
-            },
-            "first_entry":{
-               "data":null
-            }
-         }
-      },
-      {
-         "id":1,
-         "attributes":{
-            "QuestionName":"Which area do you want to look into?",
-            "createdAt":"2023-04-20T04:42:52.429Z",
-            "updatedAt":"2023-05-04T17:03:57.499Z",
-            "publishedAt":"2023-05-04T17:03:57.494Z",
-            "question_to_choices":{
-               "data":[
-                  {
-                     "id":1,
-                     "attributes":{
-                        "ChoiceName":"Communication",
-                        "createdAt":"2023-04-20T04:44:29.739Z",
-                        "updatedAt":"2023-04-20T04:44:51.466Z",
-                        "publishedAt":"2023-04-20T04:44:51.459Z"
-                     }
-                  },
-                  {
-                     "id":2,
-                     "attributes":{
-                        "ChoiceName":"Computer Access",
-                        "createdAt":"2023-04-20T04:57:46.883Z",
-                        "updatedAt":"2023-04-20T04:57:49.760Z",
-                        "publishedAt":"2023-04-20T04:57:49.754Z"
-                     }
-                  },
-                  {
-                     "id":3,
-                     "attributes":{
-                        "ChoiceName":"Home Access",
-                        "createdAt":"2023-04-20T04:58:05.134Z",
-                        "updatedAt":"2023-04-20T05:00:32.030Z",
-                        "publishedAt":"2023-04-20T05:00:32.022Z"
-                     }
-                  },
-                  {
-                     "id":4,
-                     "attributes":{
-                        "ChoiceName":"Smart Phone Access",
-                        "createdAt":"2023-04-20T04:58:28.838Z",
-                        "updatedAt":"2023-04-20T04:58:31.349Z",
-                        "publishedAt":"2023-04-20T04:58:31.343Z"
-                     }
-                  }
-               ]
-            },
-            "previous_choices_connected":{
-               "data":null
-            },
-            "first_entry":{
-               "data":{
-                  "id":1,
-                  "attributes":{
-                     "Title":"Home",
-                     "createdAt":"2023-04-20T04:42:05.978Z",
-                     "updatedAt":"2023-04-20T04:42:59.639Z",
-                     "publishedAt":"2023-04-20T04:42:59.631Z"
-                  }
-               }
-            }
-         }
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "QuestionName": "Are you concerned about the quality of your speech?",
+        "createdAt": "2023-11-15T15:41:06.070Z",
+        "updatedAt": "2023-11-17T14:06:51.183Z",
+        "publishedAt": "2023-11-16T01:57:46.981Z",
+        "QuestionDescription": null
       }
-   ],
-   "meta":{
-      "pagination":{
-         "page":1,
-         "pageSize":25,
-         "pageCount":1,
-         "total":8
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "QuestionName": "Proactive voice preservation",
+        "createdAt": "2023-11-16T02:07:15.253Z",
+        "updatedAt": "2023-11-16T02:07:17.120Z",
+        "publishedAt": "2023-11-16T02:07:17.116Z",
+        "QuestionDescription": null
       }
-   }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "QuestionName": "Message Banking",
+        "createdAt": "2023-11-16T02:14:39.777Z",
+        "updatedAt": "2023-11-16T02:14:41.832Z",
+        "publishedAt": "2023-11-16T02:14:41.830Z",
+        "QuestionDescription": null
+      }
+    },
+    {
+      "id": 6,
+      "attributes": {
+        "QuestionName": "Somewhat concerned about...",
+        "createdAt": "2023-11-16T02:17:15.859Z",
+        "updatedAt": "2023-11-16T02:17:37.203Z",
+        "publishedAt": "2023-11-16T02:17:17.668Z",
+        "QuestionDescription": null
+      }
+    },
+    {
+      "id": 7,
+      "attributes": {
+        "QuestionName": "Speech Clarity ",
+        "createdAt": "2023-11-16T02:20:48.890Z",
+        "updatedAt": "2023-11-16T02:46:51.174Z",
+        "publishedAt": "2023-11-16T02:46:51.168Z",
+        "QuestionDescription": "Consider talking with your speech-language pathologist or physician about the use of the following strategies:"
+      }
+    },
+    {
+      "id": 8,
+      "attributes": {
+        "QuestionName": "My Volume",
+        "createdAt": "2023-11-16T03:50:47.538Z",
+        "updatedAt": "2023-11-16T03:51:19.021Z",
+        "publishedAt": "2023-11-16T03:50:49.047Z",
+        "QuestionDescription": "When we speak, we use many muscle groups at the same time. When you try to speak louder(because your voice is weak OR there is noise in the room), you can quickly fatigue the muscles used for speaking.\n\nVoice amplification can help you speak with less energy and help avoid quick fatigue"
+      }
+    },
+    {
+      "id": 9,
+      "attributes": {
+        "QuestionName": "Voice Amplification",
+        "createdAt": "2023-11-16T03:54:16.209Z",
+        "updatedAt": "2023-11-16T03:54:48.472Z",
+        "publishedAt": "2023-11-16T03:54:17.752Z",
+        "QuestionDescription": "When we speak, we use many muscle groups at the same time. When you try to speak louder(because your voice is weak OR there is noise in the room), you can quickly fatigue the muscles used for speaking.\n\nVoice amplification can help you speak with less energy and help avoid quick fatigue"
+      }
+    },
+    {
+      "id": 10,
+      "attributes": {
+        "QuestionName": "Breath Support for Speaking",
+        "createdAt": "2023-11-16T03:59:53.541Z",
+        "updatedAt": "2023-11-16T03:59:54.672Z",
+        "publishedAt": "2023-11-16T03:59:54.663Z",
+        "QuestionDescription": null
+      }
+    },
+    {
+      "id": 11,
+      "attributes": {
+        "QuestionName": "Backup Communication Tools",
+        "createdAt": "2023-11-16T04:02:10.488Z",
+        "updatedAt": "2023-11-16T04:02:11.377Z",
+        "publishedAt": "2023-11-16T04:02:11.375Z",
+        "QuestionDescription": null
+      }
+    },
+    {
+      "id": 12,
+      "attributes": {
+        "QuestionName": "Quick ACCESS Strategies",
+        "createdAt": "2023-11-16T04:04:30.510Z",
+        "updatedAt": "2023-11-16T04:04:33.493Z",
+        "publishedAt": "2023-11-16T04:04:33.481Z",
+        "QuestionDescription": null
+      }
+    },
+    {
+      "id": 14,
+      "attributes": {
+        "QuestionName": "High-Tech Strategies",
+        "createdAt": "2023-11-16T04:38:50.388Z",
+        "updatedAt": "2023-11-16T04:38:51.888Z",
+        "publishedAt": "2023-11-16T04:38:51.885Z",
+        "QuestionDescription": null
+      }
+    },
+    {
+      "id": 15,
+      "attributes": {
+        "QuestionName": "Writing",
+        "createdAt": "2023-11-17T14:27:14.215Z",
+        "updatedAt": "2023-11-17T16:27:57.817Z",
+        "publishedAt": "2023-11-17T14:27:15.372Z",
+        "QuestionDescription": "writing question descirption"
+      }
+    },
+    {
+      "id": 16,
+      "attributes": {
+        "QuestionName": "Table/Smart Phone Based Apps",
+        "createdAt": "2023-11-17T16:48:40.295Z",
+        "updatedAt": "2023-11-17T16:48:41.507Z",
+        "publishedAt": "2023-11-17T16:48:41.495Z",
+        "QuestionDescription": null
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 13
+    }
+  }
 }

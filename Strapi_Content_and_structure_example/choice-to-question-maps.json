@@ -1,0 +1,262 @@
+{
+  "data": [
+    {
+      "id": 2,
+      "attributes": {
+        "ChoiceName": "comm",
+        "createdAt": "2023-11-16T01:10:06.876Z",
+        "updatedAt": "2023-11-16T01:58:57.787Z",
+        "publishedAt": "2023-11-16T01:16:40.585Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 3,
+      "attributes": {
+        "ChoiceName": "computer access",
+        "createdAt": "2023-11-16T01:50:03.542Z",
+        "updatedAt": "2023-11-16T01:51:48.652Z",
+        "publishedAt": "2023-11-16T01:50:04.822Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 4,
+      "attributes": {
+        "ChoiceName": "home access",
+        "createdAt": "2023-11-16T01:52:01.679Z",
+        "updatedAt": "2023-11-16T01:52:03.774Z",
+        "publishedAt": "2023-11-16T01:52:03.769Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 5,
+      "attributes": {
+        "ChoiceName": "smart phone access",
+        "createdAt": "2023-11-16T01:52:12.884Z",
+        "updatedAt": "2023-11-16T01:52:13.688Z",
+        "publishedAt": "2023-11-16T01:52:13.685Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 6,
+      "attributes": {
+        "ChoiceName": "No, but I want to proactive",
+        "createdAt": "2023-11-16T02:02:07.163Z",
+        "updatedAt": "2023-11-16T02:02:09.312Z",
+        "publishedAt": "2023-11-16T02:02:09.310Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 7,
+      "attributes": {
+        "ChoiceName": "Very concerned",
+        "createdAt": "2023-11-16T02:02:53.827Z",
+        "updatedAt": "2023-11-17T14:04:58.495Z",
+        "publishedAt": "2023-11-16T02:02:54.802Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 8,
+      "attributes": {
+        "ChoiceName": "Somewhat concerned",
+        "createdAt": "2023-11-16T02:03:08.382Z",
+        "updatedAt": "2023-11-17T14:07:31.794Z",
+        "publishedAt": "2023-11-16T02:03:09.228Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 9,
+      "attributes": {
+        "ChoiceName": "My speech no longer meets my communication needs",
+        "createdAt": "2023-11-16T02:03:26.581Z",
+        "updatedAt": "2023-11-16T02:07:47.885Z",
+        "publishedAt": "2023-11-16T02:03:27.883Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 10,
+      "attributes": {
+        "ChoiceName": "Message Banking",
+        "createdAt": "2023-11-16T02:08:06.765Z",
+        "updatedAt": "2023-11-16T02:08:08.637Z",
+        "publishedAt": "2023-11-16T02:08:08.633Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 11,
+      "attributes": {
+        "ChoiceName": "Voice banking",
+        "createdAt": "2023-11-16T02:08:21.617Z",
+        "updatedAt": "2023-11-16T02:08:23.552Z",
+        "publishedAt": "2023-11-16T02:08:23.550Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 12,
+      "attributes": {
+        "ChoiceName": "Double Dipping",
+        "createdAt": "2023-11-16T02:08:35.074Z",
+        "updatedAt": "2023-11-16T02:08:35.959Z",
+        "publishedAt": "2023-11-16T02:08:35.944Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 13,
+      "attributes": {
+        "ChoiceName": "My speech clarity",
+        "createdAt": "2023-11-16T02:18:07.682Z",
+        "updatedAt": "2023-11-16T02:46:53.187Z",
+        "publishedAt": "2023-11-16T02:46:53.185Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 14,
+      "attributes": {
+        "ChoiceName": "My volume",
+        "createdAt": "2023-11-16T02:18:43.636Z",
+        "updatedAt": "2023-11-16T02:18:44.621Z",
+        "publishedAt": "2023-11-16T02:18:44.617Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 15,
+      "attributes": {
+        "ChoiceName": "The energy it takes to speak",
+        "createdAt": "2023-11-16T02:19:00.739Z",
+        "updatedAt": "2023-11-16T02:19:01.756Z",
+        "publishedAt": "2023-11-16T02:19:01.749Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 16,
+      "attributes": {
+        "ChoiceName": "My breath support for speaking",
+        "createdAt": "2023-11-16T02:19:16.323Z",
+        "updatedAt": "2023-11-16T02:19:17.813Z",
+        "publishedAt": "2023-11-16T02:19:17.808Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 17,
+      "attributes": {
+        "ChoiceName": "Voice preservation",
+        "createdAt": "2023-11-16T02:19:31.318Z",
+        "updatedAt": "2023-11-16T02:19:32.163Z",
+        "publishedAt": "2023-11-16T02:19:32.160Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 18,
+      "attributes": {
+        "ChoiceName": "Pacing your speech including segmenting syllables",
+        "createdAt": "2023-11-16T02:48:08.416Z",
+        "updatedAt": "2023-11-16T02:48:09.548Z",
+        "publishedAt": "2023-11-16T02:48:09.543Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 19,
+      "attributes": {
+        "ChoiceName": "Producing fewer words per breath",
+        "createdAt": "2023-11-16T03:31:44.043Z",
+        "updatedAt": "2023-11-16T03:31:45.646Z",
+        "publishedAt": "2023-11-16T03:31:45.643Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 21,
+      "attributes": {
+        "ChoiceName": "Learn about quick access tools for clarifying your message",
+        "createdAt": "2023-11-16T03:48:02.025Z",
+        "updatedAt": "2023-11-16T03:48:03.108Z",
+        "publishedAt": "2023-11-16T03:48:03.102Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 22,
+      "attributes": {
+        "ChoiceName": "Voice Amplification",
+        "createdAt": "2023-11-16T03:48:21.344Z",
+        "updatedAt": "2023-11-17T14:21:06.951Z",
+        "publishedAt": "2023-11-16T03:48:22.154Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 23,
+      "attributes": {
+        "ChoiceName": "Voice Amplification",
+        "createdAt": "2023-11-16T04:00:31.976Z",
+        "updatedAt": "2023-11-17T14:21:52.696Z",
+        "publishedAt": "2023-11-17T14:21:12.556Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 24,
+      "attributes": {
+        "ChoiceName": "Learn about back-up communication tool",
+        "createdAt": "2023-11-16T04:00:58.678Z",
+        "updatedAt": "2023-11-16T04:00:59.582Z",
+        "publishedAt": "2023-11-16T04:00:59.578Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 25,
+      "attributes": {
+        "ChoiceName": "Start voice preservation",
+        "createdAt": "2023-11-16T04:01:16.843Z",
+        "updatedAt": "2023-11-16T04:01:17.858Z",
+        "publishedAt": "2023-11-16T04:01:17.856Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 26,
+      "attributes": {
+        "ChoiceName": "Quick ACCESS Strategies",
+        "createdAt": "2023-11-16T04:02:39.058Z",
+        "updatedAt": "2023-11-16T04:02:39.923Z",
+        "publishedAt": "2023-11-16T04:02:39.920Z",
+        "PlatformChoice": null
+      }
+    },
+    {
+      "id": 27,
+      "attributes": {
+        "ChoiceName": "High-Tech Strategies",
+        "createdAt": "2023-11-16T04:03:05.842Z",
+        "updatedAt": "2023-11-16T04:03:06.765Z",
+        "publishedAt": "2023-11-16T04:03:06.762Z",
+        "PlatformChoice": null
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 2,
+      "total": 39
+    }
+  }
+}

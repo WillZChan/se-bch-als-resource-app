@@ -1,0 +1,21 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "attributes": {
+        "Title": "1",
+        "createdAt": "2023-11-16T01:19:02.221Z",
+        "updatedAt": "2023-11-16T01:19:04.339Z",
+        "publishedAt": "2023-11-16T01:19:04.337Z"
+      }
+    }
+  ],
+  "meta": {
+    "pagination": {
+      "page": 1,
+      "pageSize": 25,
+      "pageCount": 1,
+      "total": 1
+    }
+  }
+}
