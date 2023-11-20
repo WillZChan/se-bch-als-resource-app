@@ -100,20 +100,20 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
         image.current = '/titleImgCommunication.png';
       }
       if (choice.title === 'Computer Access') {
-        pageTitle.current = 'Computer Access';
-        image.current = '/titleImgComputerAccess.png';  // Adjusted the image path
+        pageTitle.current = 'Computer\u00A0Access';
+        image.current = '/titleImgComputerAcess.png';  // Adjusted the image path
       }
  
  
       if (choice.title === 'Home Access') {
-        pageTitle.current = 'Home Access';
-        image.current = '/titleImgComputerAccess.png';  // Adjusted the image path
+        pageTitle.current = 'Home\u00A0Access';
+        image.current = '/titleImgHomeAcess.png';  // Adjusted the image path
       }
  
  
       if (choice.title === 'Smart Phone Access') {
-        pageTitle.current = 'Smart Phone Access';
-        image.current = '/titleImgComputerAccess.png';  // Adjusted the image path
+        pageTitle.current = 'Smart\u00A0Phone\u00A0Access';
+        image.current = '/titleImgPhoneAccess.png';  // Adjusted the image path
       }
  
  
