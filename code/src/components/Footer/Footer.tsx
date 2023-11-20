@@ -102,10 +102,11 @@ export function FooterLinks() {
     <footer className={classes.footer}>
       <Container className={classes.inner}>
         <div className={classes.logo}>
-          {/* original size settings */}
-          <Image alt='Best hospitals logo' src={image12} width={69.5} height={80}/>
-          {/* slightly bigger image, could fit better on desktop site */}
-          {/* <Image alt='Best hospitals logo' src={image12} size={20}/> */}
+        <a href = "https://health.usnews.com/best-hospitals/area/ma/boston-childrens-hospital-6140270" target="_blank" rel="noopener noreferrer">
+         <Image alt='US News Health' src={image12} width={69.5} height={80}/>
+         {/* slightly bigger image, could fit better on desktop site */}
+         {/* <Image alt='Best hospitals logo' src={image12} size={20}/> */}
+           </a>
         </div>
         <div className={classes.groups}>
           <div key={0} className={classes.wrapper}>
