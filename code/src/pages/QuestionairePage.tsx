@@ -99,10 +99,29 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
         pageTitle.current = 'Communication';
         image.current = '/titleImgCommunication.png';
       }
+      if (choice.title === 'Computer Access') {
+        pageTitle.current = 'Computer Access';
+        image.current = '/titleImgComputerAccess.png';  // Adjusted the image path
+      }
+ 
+ 
+      if (choice.title === 'Home Access') {
+        pageTitle.current = 'Home Access';
+        image.current = '/titleImgComputerAccess.png';  // Adjusted the image path
+      }
+ 
+ 
+      if (choice.title === 'Smart Phone Access') {
+        pageTitle.current = 'Smart Phone Access';
+        image.current = '/titleImgComputerAccess.png';  // Adjusted the image path
+      }
+ 
+ 
     } catch (error) {
       console.error(error);
       // handle error here, for example by setting an error message state
     }
+ 
   }, [clickedChoice, currChoices, currQuestion]);
   
 
