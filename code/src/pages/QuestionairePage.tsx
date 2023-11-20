@@ -20,6 +20,7 @@ const QuestionaireBodyContent: React.FC<Props> = () => {
   ];
 
   // current question state
+  //clarify how John wants this phrased
   const [currQuestion, setCurrQuestion] = useState<IQuestion>({ id: '2', title: 'Which area do you want to look into?' });
 
   // current choices state
