@@ -8,5 +8,17 @@
     "blocked": false,
     "createdAt": "2023-11-14T20:35:28.570Z",
     "updatedAt": "2023-11-14T20:39:28.059Z"
+    
+  },
+  {
+    "id": 2,
+    "username": "williamchan",
+    "email": "willchan@bu.edu",
+    "provider": "local",
+    "confirmed": true,
+    "blocked": false,
+    "createdAt": "2023-11-14T20:35:28.570Z",
+    "updatedAt": "2023-11-14T20:39:28.059Z"
+
   }
 ]
